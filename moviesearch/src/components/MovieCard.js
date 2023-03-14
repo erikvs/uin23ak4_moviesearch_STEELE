@@ -4,9 +4,10 @@ import placeHolderImage from "../resources/placeHolderImage.png";
 const MovieCard = ({ movie }) => {
   return (
     <div>
+      {/*placeHolderImage: https://www.freepik.com/free-photos-vectors/video-placeholder*/}
       <img 
       src={movie.Poster} alt={movie.Title} onError={(e) => {
-          e.target.src = placeHolderImage;
+          e.target.src = placeHolderImage; 
         }}/> 
       <div>
         <h2>{movie.Title}</h2>
