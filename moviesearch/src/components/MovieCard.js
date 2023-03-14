@@ -1,10 +1,13 @@
 import React from "react";
+import placeHolderImage from "../resources/placeHolderImage.png";
 
 const MovieCard = ({ movie }) => {
   return (
     <div>
-        {/* TODO: Change alternate image to placeholder image and add more display data (title, published year, genre, director, actors, price?)*/ }
-      <img src={movie.Poster} alt={movie.Title} /> 
+      <img 
+      src={movie.Poster} alt={movie.Title} onError={(e) => {
+          e.target.src = placeHolderImage;
+        }}/> 
       <div>
         <h2>{movie.Title}</h2>
         <p>{movie.Year}</p>
