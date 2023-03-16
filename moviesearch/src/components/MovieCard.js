@@ -1,10 +1,11 @@
 import React from "react";
 import placeHolderImage from "../resources/placeHolderImage.png";
 
+/*placeHolderImage: https://www.freepik.com/free-photos-vectors/video-placeholder*/
+
 const MovieCard = ({ movie }) => {
   return (
     <div>
-      {/*placeHolderImage: https://www.freepik.com/free-photos-vectors/video-placeholder*/}
       <img 
       src={movie.Poster} alt={movie.Title} onError={(e) => {
           e.target.src = placeHolderImage; 
