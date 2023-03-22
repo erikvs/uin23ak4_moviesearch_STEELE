@@ -1,4 +1,4 @@
-import './App.css';
+import './css/main.css';
 import React, { useState } from "react";
 import Movies from "./components/Movies";
 import SearchResults from "./components/SearchResults";

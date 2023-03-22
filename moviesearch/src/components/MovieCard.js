@@ -5,8 +5,8 @@ import placeHolderImage from "../resources/placeHolderImage.png";
 
 const MovieCard = ({ movie }) => {
   return (
-    <>
-      <img 
+    <div className="movie-card">
+      <img
       src={movie.Poster} alt={movie.Title} onError={(e) => {
           e.target.src = placeHolderImage; 
         }}/> 
@@ -17,7 +17,7 @@ const MovieCard = ({ movie }) => {
         <p>Director: {movie.Director}</p>
         <p>Actors: {movie.Actors}</p>
       </article>
-    </>
+    </div>
   );
 };
 
