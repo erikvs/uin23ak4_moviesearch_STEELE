@@ -35,7 +35,7 @@ const Movies = () => {
       <h1>James Bond Movies</h1>
       <section className="row">
         {movies.map((movie) => (
-          <div className="col-md-4 border" key={movie.imdbID}>
+          <div className="col-lg-4 my-2" key={movie.imdbID}>
           <MovieCard movie={movie} />
         </div>
         ))}

@@ -32,12 +32,12 @@ const SearchResults = ({ searchTerm }) => {
   }
 
   return (
-    <div className="container">
+    <div className="container h-100">
       <h1>Search Results for "{searchTerm}"</h1>
       {movies.length > 0 ? (
         <section className="row">
           {movies.map((movie) => (
-            <div className="col-md-4  border" key={movie.imdbID}>
+            <div className="col-lg-4 my-2 " key={movie.imdbID}>
             <MovieCard movie={movie} />
             </div>
           ))}

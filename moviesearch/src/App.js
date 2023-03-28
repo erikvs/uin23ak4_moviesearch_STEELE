@@ -12,20 +12,24 @@ function App() {
   };
 
   return (
-    <section className="App">
-      <h1>Movie Search</h1>
+    <div className="App">
+      <header>
+        <h1>Movie Search</h1>
       <input
         type="text"
         placeholder="Search for a movie title..."
         value={searchTerm}
         onChange={handleSearchTermChange}
       />
+      </header>
+      <body>
       {searchTerm.length >= 3 ? (
         <SearchResults searchTerm={searchTerm} />
       ) : (
         <Movies />
       )}
-    </section>
+      </body>
+    </div>
   );
 }
 
