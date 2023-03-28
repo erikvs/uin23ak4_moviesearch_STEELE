@@ -12,12 +12,12 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App bg-primary">
       <header>
         <h1>Movie Search</h1>
       <input
         type="text"
-        placeholder="Search for a movie title..."
+        placeholder="Enter title..."
         value={searchTerm}
         onChange={handleSearchTermChange}
       />
