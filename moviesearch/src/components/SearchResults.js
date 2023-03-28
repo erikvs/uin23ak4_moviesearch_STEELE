@@ -32,17 +32,19 @@ const SearchResults = ({ searchTerm }) => {
   }
 
   return (
-    <>
+    <div className="container">
       <h1>Search Results for "{searchTerm}"</h1>
       {movies.length > 0 ? (
-        <section>
+        <section className="row">
           {movies.map((movie) => (
-            <MovieCard key={movie.imdbID} movie={movie} />
+            <div className="col-md-4  border" key={movie.imdbID}>
+            <MovieCard movie={movie} />
+            </div>
           ))}
         </section>
       ) : 
         null}
-    </>
+    </div>
   );
 };
 

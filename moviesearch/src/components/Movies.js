@@ -31,13 +31,15 @@ const Movies = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>James Bond Movies</h1>
-      <div>
+      <section className="row">
         {movies.map((movie) => (
-          <MovieCard key={movie.imdbID} movie={movie} />
+          <div className="col-md-4 border" key={movie.imdbID}>
+          <MovieCard movie={movie} />
+        </div>
         ))}
-      </div>
+      </section>
     </div>
   );
 };

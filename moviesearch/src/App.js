@@ -1,7 +1,8 @@
-import './css/main.css';
+import './custom.scss';
 import React, { useState } from "react";
 import Movies from "./components/Movies";
 import SearchResults from "./components/SearchResults";
+
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
